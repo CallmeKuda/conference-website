@@ -8,11 +8,12 @@ require('dotenv').config();
 
 app.use(express.urlencoded({extended:true}));
 app.use(express.static('public'));
-app.use(expressLayout);
+app.use(expressLayouts);
 
 app.set('layout', './layouts/main');
+app.set('view engine', 'ejs');
 
-const routes = require('/server/routes/confRoutes.js')
+const routes = require('./server/routes/conferenceRoutes')
 app.use('/', routes);
 
 app.listen(port, ()=>console.log(`Listening to port ${port}`));//console-log with the single back-ticks

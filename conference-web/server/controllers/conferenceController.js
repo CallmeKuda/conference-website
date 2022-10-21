@@ -5,7 +5,7 @@
  * GET/
  * HomePage
  * */
-exports.HomePage = async(req, res)=>{
+exports.homepage = async(req, res)=>{
  res.render('index');
 
 }
