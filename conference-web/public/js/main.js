@@ -67,3 +67,6 @@ $('#registration-form').submit(function(e){
 */
 
 smoothScroll.init();
+
+/* schedule
+**/
