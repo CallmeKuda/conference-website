@@ -7,4 +7,5 @@ const conferenceController = require('../controllers/conferenceController');
 */
 router.get('/', conferenceController.homepage);
 
+
 module.exports = router;
